@@ -1,8 +1,8 @@
 const prompt = require("prompt-sync")()
-let password = prompt("Entre votre mot de pass")
-let passwordLenght = password.length()
+let password = prompt("Entre votre mot de pass: ")
+let passwordLenght = password.length
 const regex = /[!@#$%^&*()\-+={}[\]:;"'<>,.?\/|\\]/;
-const isHaveSpecialCharacters = false
+let isHaveSpecialCharacters = false
 if(regex.test(password)){
     isHaveSpecialCharacters = true
 }
