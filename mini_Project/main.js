@@ -222,6 +222,8 @@ function showHestoric() {
       for (let i = 0; i < hestoric.length; i++) {
         console.log("Operation numero " + (i + 1) + " : ");
         console.log(hestoric[i]);
+        console.log("-".repeat(20));
+        
       }
       console.log("*".repeat(20));
       showHestoric()
