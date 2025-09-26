@@ -63,7 +63,7 @@ console.log("*".repeat(20));
       } while ((typeof number1 && typeof number2) !== "number");
       Addition(number1, number2);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 2:
       do {
@@ -72,7 +72,7 @@ console.log("*".repeat(20));
       } while ((typeof number1 && typeof number2) !== "number");
       Soustraction(number1, number2);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 3:
       do {
@@ -81,7 +81,7 @@ console.log("*".repeat(20));
       } while ((typeof number1 && typeof number2) !== "number");
       Multiplication(number1, number2);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 4:
       do {
@@ -93,7 +93,7 @@ console.log("*".repeat(20));
       } while ((typeof number1 && typeof number2) !== "number" || number2 == 0);
       Division(number1, number2);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 5:
       do {
@@ -102,7 +102,7 @@ console.log("*".repeat(20));
       } while ((typeof number1 && typeof number2) !== "number");
       Puissanc(number1, number2);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 6:
       do {
@@ -115,7 +115,7 @@ console.log("*".repeat(20));
       } while (typeof number1 !== "number" || number1 < 0);
       RacineCarrée(number1);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     case 7:
       do {
@@ -128,7 +128,7 @@ console.log("*".repeat(20));
       } while (typeof number1 !== "number" || number1 < 0);
       Factorielle(number1);
       console.log("*".repeat(20));
-      choice();
+      operation();
       break;
     default:
       console.log("Invalide numero réessayer ");
@@ -239,8 +239,9 @@ function showHestoric() {
       console.log(
         `Operation numero ${hestoricNumber} : ` + hestoric[hestoricNumber - 1]
       );
-      showHestoric()
       console.log("*".repeat(20));
+      showHestoric()
+      
       break
     case 0:
         choice()
