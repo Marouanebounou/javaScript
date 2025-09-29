@@ -176,6 +176,9 @@ console.log("*".repeat(20));
   }
 
   function RacineCarrée(number1) {
+    if(number1 < 0){
+      return 'Error'
+    }
     result = Math.sqrt(number1);
     console.log(`Le racine carree de numbre ${number1} est : ` + result);
     hestoric.push(`le racine carree de numbre ${number1} est: ${result} .`);
