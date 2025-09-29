@@ -1,3 +1,9 @@
+//Challenge 2
+
+
+//1
+
+
 const prompt = require("prompt-sync")()
 
 let etudiant = {
@@ -10,6 +16,8 @@ let etudiant = {
 
 etudiant.sePresenter();
 
+// 2
+
 let personne = {
   nom: "Marouane",
   prenom: "Bounou",
@@ -21,6 +29,8 @@ for (let index in personne) {
   console.log(personne[index]);
 }
 
+// 3
+
 let classe = {
   etudiants: ["Marouane", "Ahmed", "yassin"],
   afficherEtudiants: function () {
@@ -31,6 +41,8 @@ let classe = {
 };
 
 classe.afficherEtudiants();
+
+// 4 
 
 let livres = [
   { titre: "A Tale of Two Cities", auteur: "Charles Dickens", annee: 1978 },
@@ -44,6 +56,8 @@ let livres = [
 for (let i = 0; i < livres.length -1; i++) {
   console.log(livres[i].titre);
 }
+
+// 5 
 let nom =prompt("Entre un nome de livre : ")
 
 console.log(trouverLivre(nom));
