@@ -28,14 +28,13 @@ function choice() {
   
   switch (number) {
     case 1:
-      operation();
+      operation()
       break;
     case 2:
-      showHestoric();
-      
+      showHestoric()
       break;
     case 3:
-      exit();
+      exit()
       break;
     default:
       console.log("Entrez une valide numero: ");
